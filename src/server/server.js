@@ -28,7 +28,7 @@ const server = port => {
     .use("/users", userRouter);
 
   app
-    .use(checktoken)
+    // .use(checktoken)
     .use("/category", notebookRouter)
 
     .use("/feedback", feedbackRouter)
