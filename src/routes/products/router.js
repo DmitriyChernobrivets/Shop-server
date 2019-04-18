@@ -7,6 +7,7 @@ const getProductsById = require("./prouductRoutes/getProductByID");
 productRouter
   .post("/:category", getProducts)
   .get("/:category/:id", getProductsById)
+
   .post("/:category/search", Search);
 
 module.exports = productRouter;
